@@ -1,0 +1,1557 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Original Productions — Foto e vídeo para festas de 15 anos no RS. 15 anos de mercado. Exclusividade total — atendemos apenas 1 evento por dia.">
+<title>Original Productions | Foto &amp; Vídeo para Festas de 15 Anos — RS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Didact+Gothic&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blk:#000;--dark:rgba(255,255,255,0.62);--surf:rgba(255,255,255,0.72);--surf2:rgba(255,255,255,0.85);
+  --cream:#F5F0E8;--txt:#0b0318;--wht:#fff;--yel:#FFEF05;
+  --mut:#4a3360;--brd:rgba(11,3,24,.14);
+  --fd:'Poiret One',sans-serif;
+  --fb:'Didact Gothic',sans-serif;
+  --px:clamp(20px,5vw,80px);
+  --mw:1360px;
+  --ease:cubic-bezier(.16,1,.3,1);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--fb);background:radial-gradient(ellipse 85% 65% at 8% 8%,rgba(175,109,255,.38),transparent 60%),radial-gradient(ellipse 75% 60% at 78% 32%,rgba(255,228,155,.52),transparent 62%),radial-gradient(ellipse 72% 62% at 14% 82%,rgba(255,100,180,.34),transparent 62%),radial-gradient(ellipse 70% 60% at 90% 90%,rgba(120,190,255,.40),transparent 62%),linear-gradient(160deg,#f2e6ff 0%,#fde8f0 50%,#e8f0ff 100%);background-attachment:fixed;color:var(--txt);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{text-decoration:none;color:inherit;cursor:pointer}
+button{cursor:pointer;border:none;background:none;font-family:inherit}
+ul{list-style:none}
+
+/* grain */
+body::after{content:'';position:fixed;inset:-50%;width:200%;height:200%;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity:.016;pointer-events:none;z-index:8000;animation:grain .4s steps(1) infinite}
+@keyframes grain{0%,100%{transform:translate(0,0)}20%{transform:translate(-2%,-3%)}40%{transform:translate(3%,2%)}60%{transform:translate(-1%,4%)}80%{transform:translate(4%,-1%)}}
+
+/* layout */
+.w{max-width:var(--mw);margin:0 auto;padding:0 var(--px)}
+.sec{padding:clamp(72px,11vw,140px) 0;position:relative;z-index:1}
+.sec-dark{background:var(--dark)}
+.sec-surf{background:var(--surf)}
+.sec-blk{background:rgba(255,255,255,0.62)}
+.sec-yel{background:var(--yel)}
+.sep{height:1px;background:linear-gradient(90deg,transparent,rgba(175,109,255,.3),transparent)}
+
+/* type */
+.tag{font-family:var(--fb);font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--txt);opacity:.65;display:inline-flex;align-items:center;gap:12px}
+.tag::before{content:'';width:32px;height:1px;background:rgba(180,130,0,.8);flex-shrink:0}
+.disp{font-family:var(--fd);line-height:1;letter-spacing:.04em;font-weight:400}
+.h2{font-family:var(--fd);font-size:clamp(36px,5.5vw,72px);line-height:1.08;letter-spacing:.04em;font-weight:400}
+.h3{font-family:var(--fd);font-size:clamp(20px,2.5vw,28px);line-height:1.25;letter-spacing:.04em;font-weight:400}
+.lead{font-size:clamp(14px,1.6vw,17px);color:rgba(11,3,24,.72);line-height:1.8}
+.em-yel{color:#b8900a}
+
+/* reveal */
+.r{opacity:0;transform:translateY(28px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.r.v{opacity:1;transform:none}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}
+.d4{transition-delay:.32s}.d5{transition-delay:.40s}
+@media(prefers-reduced-motion:reduce){.r{opacity:1;transform:none;transition:none}*{animation-duration:.001ms!important}}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:12px;font-family:var(--fb);font-size:11px;letter-spacing:3px;text-transform:uppercase;padding:17px 36px;cursor:pointer;transition:all .28s var(--ease);position:relative;overflow:visible;white-space:nowrap;border-radius:9999px}
+.btn-y{background:linear-gradient(135deg,#ffe500,#ffef05,#ffd700);color:var(--blk);box-shadow:0 0 0 0 rgba(255,239,5,0)}.btn-y:hover{background:linear-gradient(135deg,#fff176,#ffef05,#ffe000);box-shadow:0 0 32px rgba(255,239,5,.45);transform:scale(1.06)}
+.btn-y:active{transform:scale(1.02)}
+.btn-o{border:1px solid rgba(30,10,60,.22);color:var(--txt);border-radius:9999px;background:rgba(255,255,255,.35)}.btn-o:hover{border-color:rgba(180,130,0,.7);color:var(--txt);background:rgba(255,239,5,.14);box-shadow:0 0 20px rgba(255,239,5,.2)}
+.btn-k{background:var(--blk);color:var(--cream);border:1px solid rgba(255,255,255,.15);border-radius:9999px}.btn-k:hover{background:var(--surf);border-color:rgba(255,255,255,.3)}
+.btn-lg{padding:20px 48px;font-size:12px;letter-spacing:3.5px}
+
+/* ── bubbles ── */
+#bubbles{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.bubble{position:absolute;border-radius:50%;animation:floatUp var(--bd,18s) var(--bd-delay,0s) linear infinite;opacity:0}
+@keyframes floatUp{
+  0%{opacity:0;transform:translateY(0) translateX(0)}
+  8%{opacity:var(--bop,.15)}
+  88%{opacity:var(--bop,.15)}
+  100%{opacity:0;transform:translateY(-115vh) translateX(var(--bx,0px))}
+}
+
+/* ── NAV ── */
+.nav{position:fixed;top:0;left:0;right:0;z-index:700;padding:24px var(--px);display:flex;align-items:center;justify-content:space-between;transition:background .4s,padding .4s,border-bottom .4s;border-bottom:1px solid transparent;background:rgba(255,255,255,.82);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);color:var(--txt)}
+.nav.stuck{background:rgba(255,255,255,.95);backdrop-filter:blur(28px);-webkit-backdrop-filter:blur(28px);padding:15px var(--px);border-bottom-color:rgba(175,109,255,.18);color:var(--txt)}
+.nav-brand{display:flex;align-items:center;gap:14px}
+.nav-logo-img{height:56px;width:auto}
+.nav-wordmark b{display:block;font-family:var(--fd);font-size:20px;letter-spacing:.12em;text-transform:uppercase;font-weight:400}
+.nav-wordmark small{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:#b8900a;display:block;margin-top:3px}
+
+/* ── HERO split ── */
+.hero{position:relative;min-height:100svh;display:grid;grid-template-columns:55% 45%;overflow:hidden;z-index:1}
+.hero-l{position:relative;z-index:2;display:flex;flex-direction:column;justify-content:flex-end;padding:120px var(--px) 64px;background:var(--blk);color:var(--cream)}
+.hero-l::after{content:'';position:absolute;top:0;right:0;bottom:0;width:2px;background:var(--yel)}
+.hero-r{position:relative;overflow:hidden;background:url('4.webp') top center/cover,linear-gradient(145deg,#1c1208,#2e1f0a)}
+.hero-r::before{content:'';position:absolute;inset:0;background:linear-gradient(to right,rgba(0,0,0,.45) 0%,transparent 40%)}
+.hero-l .tag{color:var(--cream);opacity:1}
+.hero-l .tag::before{background:var(--yel)}
+.hero-l .lead{color:rgba(245,240,232,.58)}
+.hero-l .hero-stat-l{color:rgba(245,240,232,.42)}
+.hero-l .btn-o{color:var(--cream);border-color:rgba(245,240,232,.3);background:transparent}
+.hero-l .btn-o:hover{color:var(--yel);border-color:var(--yel);background:transparent}
+.hero-eye{display:flex;align-items:center;gap:14px;margin-bottom:32px;animation:fadeIn 1s ease .3s both}
+.hero-eye-bar{width:48px;height:1px;background:var(--yel)}
+.hero-eye-txt{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--yel)}
+.hero-title{font-family:var(--fd);font-size:clamp(52px,8.5vw,120px);line-height:.95;letter-spacing:.04em;text-transform:uppercase;margin-bottom:36px;animation:fadeUp 1s var(--ease) .5s both}
+.hero-title em{font-style:normal;color:var(--yel);display:block}
+.hero-sub{font-size:15px;color:rgba(245,240,232,.55);line-height:1.8;max-width:420px;margin-bottom:48px;animation:fadeUp 1s var(--ease) .68s both}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;animation:fadeUp 1s var(--ease) .84s both}
+.hero-stats{display:grid;grid-template-columns:repeat(4,1fr);margin-top:56px;padding-top:32px;border-top:1px solid rgba(255,255,255,.09);animation:fadeUp 1s var(--ease) 1s both}
+.hero-stat{padding:0 20px 0 0;border-right:1px solid rgba(255,255,255,.09)}
+.hero-stat:last-child{border-right:none}
+.hero-stat-n{font-family:var(--fd);font-size:clamp(28px,4vw,46px);color:var(--yel);line-height:1;letter-spacing:.04em}
+.hero-stat-l{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--mut);margin-top:5px}
+.hero-scrl{position:absolute;bottom:32px;right:32px;z-index:3;display:flex;flex-direction:column;align-items:center;gap:8px;color:rgba(255,255,255,.25);font-size:9px;letter-spacing:3px;text-transform:uppercase;writing-mode:vertical-rl;animation:fadeIn 1s ease 1.4s both}
+.hero-scrl-bar{width:1px;height:60px;background:linear-gradient(to bottom,var(--yel),transparent);animation:scrl 2.2s ease-in-out infinite}
+@keyframes scrl{0%,100%{transform:scaleY(1)}50%{transform:scaleY(.55) translateY(14px)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(32px)}to{opacity:1;transform:none}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+
+/* ── TICKER ── */
+.ticker{background:var(--yel);padding:13px 0;overflow:hidden;white-space:nowrap}
+.ticker-track{display:inline-flex;animation:tick 22s linear infinite}
+.ticker-track:hover{animation-play-state:paused}
+@keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.tick-item{font-family:var(--fb);font-size:10px;letter-spacing:3.5px;text-transform:uppercase;color:var(--blk);padding:0 28px}
+.tick-sep{color:rgba(0,0,0,.3);padding:0 6px}
+
+/* ── PROBLEM ── */
+.prob-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(40px,6vw,100px);align-items:center}
+.prob-head .h2{margin:12px 0 20px}
+.prob-head .lead{margin-bottom:0}
+.fears{display:flex;flex-direction:column;gap:2px;margin-top:48px}
+.fear{display:grid;grid-template-columns:52px 1fr;gap:20px;align-items:start;padding:22px;background:rgba(255,255,255,.75);border-left:2px solid transparent;transition:border-color .25s,background .25s;cursor:default;border-radius:3px;margin-bottom:2px}
+.fear:hover{border-left-color:rgba(180,130,0,.8);background:rgba(255,239,5,.1)}
+.fear-n{font-family:var(--fd);font-size:30px;color:rgba(180,130,0,.28);line-height:1;padding-top:2px}
+.fear-title{font-family:var(--fd);font-size:17px;letter-spacing:.04em;margin-bottom:4px}
+.fear-desc{font-size:13px;color:var(--mut);line-height:1.6}
+.prob-img-col{position:relative}
+.prob-img{aspect-ratio:3/4;overflow:hidden;background:url('2.webp') center/cover,linear-gradient(145deg,#1c1208,#2a1a0a)}
+.prob-img img{width:100%;height:100%;object-fit:cover}
+.prob-badge{position:absolute;bottom:0;left:0;background:var(--yel);color:var(--blk);padding:24px 28px;line-height:1}
+.prob-badge-n{font-family:var(--fd);font-size:52px;letter-spacing:.04em;display:block}
+.prob-badge-l{font-size:9px;letter-spacing:3px;text-transform:uppercase;margin-top:6px;color:rgba(0,0,0,.55)}
+
+/* ── SOLUTION ── */
+.sol-wrap{text-align:center}
+.sol-logo{width:180px;height:180px;margin:0 auto 36px;background:url('logo2.webp') center/contain no-repeat}
+.sol-wrap .h2{max-width:800px;margin:12px auto 20px}
+.sol-wrap .lead{max-width:600px;margin:0 auto 72px}
+.sol-pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(175,109,255,.18)}
+.sol-pill{background:rgba(255,255,255,.65);padding:52px 36px;text-align:center;transition:background .25s;cursor:default;backdrop-filter:blur(8px)}
+.sol-pill:hover{background:rgba(255,239,5,.14)}
+.sol-pill-n{font-family:var(--fd);font-size:64px;color:#b8900a;line-height:1;letter-spacing:.04em;margin-bottom:8px}
+.sol-pill-l{font-size:9px;letter-spacing:4px;text-transform:uppercase;color:var(--mut)}
+
+/* ── BENEFITS ── */
+.ben-head{margin-bottom:72px}
+.ben-head .h2{margin:12px 0 0}
+.ben-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(175,109,255,.15)}
+.ben-card{background:rgba(255,255,255,.65);padding:48px 36px;border-bottom:3px solid transparent;transition:border-color .25s,background .25s;cursor:default;backdrop-filter:blur(8px)}
+.ben-card:hover{border-color:rgba(180,130,0,.7);background:rgba(255,239,5,.12)}
+.ben-icon{width:44px;height:44px;border:1px solid rgba(180,130,0,.35);display:flex;align-items:center;justify-content:center;margin-bottom:28px}
+.ben-icon svg{width:20px;height:20px;stroke:#b8900a;stroke-width:1.5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.ben-card .h3{margin-bottom:12px}
+.ben-card p{font-size:13px;color:rgba(11,3,24,.7);line-height:1.7}
+
+/* ── BENEFIT CARD BACKGROUNDS ── */
+.ben-card.has-bg{position:relative;background:none;overflow:hidden}
+.ben-card.has-bg::before{content:'';position:absolute;inset:0;z-index:0;background-size:cover;background-position:center top}
+.ben-card.has-bg::after{content:'';position:absolute;inset:0;z-index:1;background:linear-gradient(160deg,rgba(11,3,24,.70) 0%,rgba(11,3,24,.82) 100%)}
+.ben-card.has-bg > *{position:relative;z-index:2}
+.ben-card.has-bg .h3{color:#fff}
+.ben-card.has-bg p{color:rgba(255,255,255,.82)}
+.ben-card.has-bg .ben-icon{border-color:rgba(255,220,80,.55)}
+.ben-card.has-bg .ben-icon svg{stroke:var(--yel)}
+.bc-imersiva::before{background-image:url('imersiva.webp')}
+.bc-resolucao::before{background-image:url('resolucao.webp')}
+.bc-drone::before{background-image:url('drone.webp')}
+.bc-exclusividade::before{background-image:url('exclusividade.webp')}
+.bc-prevento::before{background-image:url('prevento.webp')}
+.bc-garantia::before{background-image:url('garantia.webp')}
+
+/* ── PROCESS ── */
+.proc-head{text-align:center;margin-bottom:88px}
+.proc-head .h2{max-width:560px;margin:12px auto 16px}
+.proc-head .lead{max-width:480px;margin:0 auto}
+.proc-track{display:grid;grid-template-columns:repeat(4,1fr);position:relative}
+.proc-track::before{content:'';position:absolute;top:79px;left:12.5%;right:12.5%;height:1px;background:linear-gradient(90deg,rgba(180,130,0,.7),rgba(175,109,255,.2));transform-origin:left;animation:lineGrow 1.4s var(--ease) .4s both}
+@keyframes lineGrow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.proc-step{
+  padding:40px 22px 36px;text-align:center;
+  background:rgba(255,255,255,.48);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border:1px solid rgba(255,255,255,.65);
+  border-radius:10px;
+  box-shadow:0 3px 18px rgba(175,109,255,.07),0 1px 4px rgba(0,0,0,.04);
+  transition:transform .3s var(--ease),box-shadow .3s
+}
+.proc-step:hover{transform:translateY(-5px);box-shadow:0 8px 28px rgba(175,109,255,.13),0 2px 8px rgba(0,0,0,.05)}
+.proc-n{width:78px;height:78px;margin:0 auto 32px;border:1px solid rgba(180,130,0,.6);color:#b8900a;font-family:var(--fd);font-size:28px;letter-spacing:.1em;display:flex;align-items:center;justify-content:center;position:relative;z-index:1;background:rgba(255,255,255,.72)}
+.proc-step .h3{margin-bottom:12px;font-size:19px}
+.proc-step p{font-size:13px;color:rgba(11,3,24,.7);line-height:1.7}
+
+/* ── TESTIMONIALS ── */
+.testi-head{margin-bottom:64px}
+.testi-head .h2{margin:12px 0 0}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.testi-card{background:rgba(255,255,255,.65);padding:40px 32px;border-left:3px solid transparent;position:relative;overflow:hidden;transition:border-color .25s,background .25s,transform .3s var(--ease);cursor:default;backdrop-filter:blur(8px)}
+.testi-card::before{content:'"';position:absolute;bottom:12px;right:24px;font-family:var(--fd);font-size:128px;line-height:1;color:rgba(175,109,255,.09);pointer-events:none}
+.testi-card:hover{border-left-color:rgba(180,130,0,.7);background:rgba(255,239,5,.1);transform:translateY(-4px)}
+.testi-stars{display:flex;gap:3px;margin-bottom:20px}
+.testi-stars svg{width:13px;height:13px;fill:#c8a000}
+.testi-txt{font-family:var(--fd);font-size:17px;font-weight:400;font-style:italic;letter-spacing:.02em;line-height:1.65;color:rgba(11,3,24,.82);margin-bottom:28px}
+.testi-author{display:flex;align-items:center;gap:14px}
+.testi-av{width:44px;height:44px;border-radius:50%;background:rgba(175,109,255,.12);border:1px solid rgba(175,109,255,.28);font-family:var(--fd);font-size:20px;color:#8040c0;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.testi-name{font-size:14px;color:var(--txt)}
+.testi-role{font-size:11px;color:var(--mut);margin-top:2px;letter-spacing:.5px}
+.testi-g{margin-top:20px;padding-top:20px;border-top:1px solid rgba(30,10,60,.1);display:flex;align-items:center;gap:6px;font-size:10px;color:var(--mut);letter-spacing:1.5px;text-transform:uppercase}
+
+/* ── PORTFOLIO ── */
+.port-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:40px;flex-wrap:wrap}
+.port-head-left .h2{margin:10px 0 0}
+.port-grid{display:grid;grid-template-columns:repeat(12,1fr);grid-template-rows:280px 280px 280px;gap:6px}
+.p1{grid-column:1/7}.p2{grid-column:7/10}.p3{grid-column:10/13}
+.p4{grid-column:1/5}.p5{grid-column:5/9}.p6{grid-column:9/13}
+.p7{grid-column:1/4}.p8{grid-column:4/9}.p9{grid-column:9/13}
+.p-item{overflow:hidden;position:relative;cursor:pointer}
+.p-bg{width:100%;height:100%;background-size:cover;background-position:center;transition:transform .6s var(--ease)}
+.p-item:hover .p-bg{transform:scale(1.06)}
+.p-ov{position:absolute;inset:0;background:rgba(0,0,0,0);display:flex;align-items:center;justify-content:center;transition:background .35s}
+.p-item:hover .p-ov{background:rgba(0,0,0,.38)}
+.p-ico{opacity:0;transform:scale(.7);transition:opacity .3s,transform .3s var(--ease)}
+.p-ico svg{width:32px;height:32px;stroke:var(--yel);stroke-width:1.5;fill:none}
+.p-item:hover .p-ico{opacity:1;transform:scale(1)}
+
+/* ── DIFFERENTIATOR ── */
+.diff-sec{background:var(--yel);position:relative;overflow:hidden}
+.diff-wm{position:absolute;right:-6%;top:50%;transform:translateY(-50%);font-family:var(--fd);font-size:clamp(200px,34vw,540px);color:rgba(0,0,0,.055);line-height:1;pointer-events:none;letter-spacing:.04em}
+.diff-inner{display:grid;grid-template-columns:1fr 1fr;gap:clamp(48px,7vw,100px);align-items:center;position:relative;z-index:1}
+.diff-l .tag{color:rgba(0,0,0,.5);opacity:1}.diff-l .tag::before{background:rgba(0,0,0,.35)}
+.diff-l .h2{color:var(--blk);margin:14px 0 20px}
+.diff-l .lead{color:rgba(0,0,0,.6);max-width:480px}
+.diff-l .lead b{color:var(--blk)}
+.diff-r{text-align:center}
+.diff-big{font-family:var(--fd);font-size:clamp(80px,13vw,196px);line-height:.9;letter-spacing:.04em;color:var(--blk)}
+.diff-big-sub{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:rgba(0,0,0,.4);margin-top:18px}
+
+/* ── OFFER ── */
+.offer-layout{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(40px,6vw,96px);align-items:start}
+.offer-img{aspect-ratio:3/4;overflow:hidden;background:url('1.webp') center top/cover,linear-gradient(145deg,#0a0a0a,#1a1a1a)}
+.offer-img img{width:100%;height:100%;object-fit:cover}
+.offer-r .h2{margin:12px 0 14px}
+.offer-r .lead{margin-bottom:48px}
+.pkgs{display:flex;flex-direction:column;gap:12px}
+.pkg{
+  display:flex;align-items:center;gap:18px;padding:20px 22px;
+  border:1px solid rgba(255,255,255,.6);
+  background:rgba(255,255,255,.58);
+  backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  border-radius:6px;
+  box-shadow:0 2px 12px rgba(175,109,255,.07);
+  transition:border-color .25s,background .25s,box-shadow .25s;cursor:default
+}
+.pkg.feat{
+  border-color:rgba(180,130,0,.5);
+  background:rgba(255,246,180,.35);
+  backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)
+}
+.pkg:hover{border-color:rgba(180,130,0,.5);background:rgba(255,255,255,.78);box-shadow:0 4px 20px rgba(180,130,0,.1)}
+.pkg-ico{width:44px;height:44px;flex-shrink:0;background:rgba(255,239,5,.15);border:1px solid rgba(180,130,0,.3);display:flex;align-items:center;justify-content:center}
+.pkg-ico svg{width:18px;height:18px;stroke:#b8900a;stroke-width:1.5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.pkg-name{font-family:var(--fd);font-size:18px;letter-spacing:.04em;flex:1}
+.pkg-desc{font-size:11px;color:var(--mut);margin-top:3px}
+.pkg-tag{background:#b8900a;color:#fff;font-size:9px;letter-spacing:2px;text-transform:uppercase;padding:5px 10px;white-space:nowrap}
+.included{margin-top:28px;padding:28px;background:rgba(255,239,5,.12);border:1px solid rgba(180,130,0,.3)}
+.included-head{font-size:9px;letter-spacing:4px;text-transform:uppercase;color:#b8900a;margin-bottom:18px}
+.included-items{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.inc-item{display:flex;align-items:flex-start;gap:8px;font-size:13px;color:rgba(11,3,24,.78)}
+.inc-item::before{content:'◆';color:#b8900a;font-size:7px;margin-top:6px;flex-shrink:0}
+
+/* ── CTA SECTION ── */
+.cta-sec{padding:clamp(96px,14vw,180px) 0;text-align:center;position:relative;overflow:hidden;background:rgba(255,255,255,.32);z-index:1}
+.cta-sec::before{content:'';position:absolute;inset:0;background:url('2.webp') center/cover;opacity:.04}
+.cta-sec::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% -10%,rgba(255,239,5,.14) 0%,transparent 55%)}
+.cta-in{position:relative;z-index:1}
+.cta-title{font-family:var(--fd);font-size:clamp(44px,8vw,112px);line-height:1.06;letter-spacing:.04em;text-transform:uppercase;max-width:940px;margin:14px auto 28px}
+.cta-title em{font-style:normal;color:#b8900a;display:inline-block;padding-bottom:10px}
+.cta-sub{max-width:460px;margin:0 auto 52px}
+.cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.urgency{margin-top:32px;font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:rgba(11,3,24,.55);display:flex;align-items:center;justify-content:center;gap:10px}
+.urgency-dot{width:7px;height:7px;border-radius:50%;background:#ff4444;animation:udot 1.8s infinite}
+@keyframes udot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.35;transform:scale(.65)}}
+
+/* ── GLOW CARD BORDER ── */
+@property --glow-hue {
+  syntax: "<number>";
+  inherits: false;
+  initial-value: 0;
+}
+@property --glow-angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+.ben-card,.testi-card{--glow-hue:0;--glow-angle:0deg}
+.ben-card:hover{
+  border-bottom-color:transparent!important;
+  box-shadow:0 0 0 1.5px hsl(calc(var(--glow-hue)*1deg) 90% 62%/.65),
+             0 0 16px hsl(calc(var(--glow-hue)*1deg) 90% 62%/.2),
+             0 0 36px hsl(calc(var(--glow-hue)*1deg) 80% 55%/.1);
+  animation:gcard-hue 5s linear infinite
+}
+.testi-card:hover{
+  border-left-color:transparent!important;
+  box-shadow:0 0 0 1.5px hsl(calc(var(--glow-hue)*1deg) 90% 62%/.65),
+             0 0 16px hsl(calc(var(--glow-hue)*1deg) 90% 62%/.2),
+             0 0 36px hsl(calc(var(--glow-hue)*1deg) 80% 55%/.1);
+  animation:gcard-hue 5s linear infinite
+}
+@keyframes gcard-hue{
+  from{--glow-hue:0}to{--glow-hue:360}
+}
+
+/* ── ANIMATED UNDERLINE ── */
+@property --ul-opacity {
+  syntax: "<number>";
+  inherits: false;
+  initial-value: 0;
+}
+.anim-ul{position:relative;display:inline-block;vertical-align:bottom}
+.anim-ul svg{
+  position:absolute;bottom:-12px;left:0;
+  width:100%;height:18px;overflow:visible;
+  pointer-events:none
+}
+.anim-ul svg path{
+  stroke:currentColor;stroke-width:2.5;fill:none;
+  stroke-linecap:round;
+  stroke-dasharray:320;stroke-dashoffset:320;
+  transition:none
+}
+.hero-title .anim-ul svg path{
+  animation:ul-draw 1.8s ease-in-out 1.3s forwards
+}
+.r.v .anim-ul svg path{
+  animation:ul-draw 1.8s ease-in-out .2s forwards
+}
+@keyframes ul-draw{
+  from{stroke-dashoffset:320}
+  to{stroke-dashoffset:0}
+}
+
+/* ── SCROLL EXPANSION HERO ── */
+.seh-section{
+  position:relative;min-height:100dvh;
+  overflow-x:hidden;
+  display:flex;flex-direction:column;
+  align-items:stretch;background:#0b0318
+}
+.seh-bg{
+  position:fixed;inset:0;z-index:0;
+  will-change:opacity
+}
+.seh-bg img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
+.seh-inner{
+  position:relative;z-index:10;
+  min-height:100dvh;
+  display:flex;align-items:center;justify-content:center
+}
+.seh-center{
+  position:absolute;top:50%;left:50%;
+  transform:translate(-50%,-50%);z-index:5
+}
+.seh-media{
+  width:300px;height:400px;
+  max-width:95vw;max-height:85dvh;
+  border-radius:16px;overflow:hidden;
+  box-shadow:0 0 60px rgba(0,0,0,.5);
+  position:relative;flex-shrink:0;
+  display:block
+}
+.seh-media img{
+  width:100%;height:100%;
+  object-fit:cover;object-position:top center;
+  display:block
+}
+.seh-veil{
+  position:absolute;inset:0;
+  background:rgba(0,0,0,.45);
+  border-radius:16px;
+  pointer-events:none
+}
+.seh-texts{
+  position:absolute;top:50%;left:50%;
+  transform:translate(-50%,-50%);
+  z-index:20;
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  gap:10px;text-align:center;
+  pointer-events:none;width:100vw
+}
+.seh-t1,.seh-t2{
+  font-family:var(--fd);
+  font-size:clamp(36px,6.5vw,80px);
+  color:rgba(245,240,232,.93);
+  text-transform:uppercase;
+  letter-spacing:.06em;
+  line-height:1;
+  text-shadow:0 2px 28px rgba(0,0,0,.45);
+  will-change:transform;
+  display:block;white-space:nowrap
+}
+.seh-meta{
+  position:absolute;
+  z-index:20;
+  display:flex;flex-direction:column;
+  align-items:center;gap:10px;
+  pointer-events:none;
+  bottom:calc(50% - 248px);
+  left:0;right:0;text-align:center
+}
+.seh-date-lbl{
+  font-size:11px;letter-spacing:4px;text-transform:uppercase;
+  color:#ffd97a;
+  text-shadow:0 1px 6px rgba(0,0,0,.6);
+  will-change:transform;font-weight:500
+}
+.seh-scroll-lbl{
+  font-size:11px;letter-spacing:3.5px;text-transform:uppercase;
+  color:rgba(255,255,255,.92);
+  text-shadow:0 1px 6px rgba(0,0,0,.6);
+  animation:seh-bounce 1s ease-in-out infinite alternate
+}
+@keyframes seh-bounce{from{transform:translateY(0)}to{transform:translateY(5px)}}
+.seh-reveal{
+  position:relative;z-index:10;
+  width:100%;padding:72px 0 88px;
+  opacity:0;pointer-events:none;
+  transition:opacity .7s ease .15s
+}
+.seh-reveal.on{opacity:1;pointer-events:auto}
+/* light text on dark section background */
+.seh-reveal .hero-stat-n{color:var(--yel);font-size:clamp(28px,4vw,46px)}
+.seh-reveal .hero-stat-l{color:rgba(245,240,232,.5);letter-spacing:3px}
+.seh-reveal .hero-stat{border-right-color:rgba(255,255,255,.1);padding-bottom:0}
+.seh-reveal .hero-stats{
+  border-top-color:rgba(255,255,255,.1);
+  max-width:560px;margin:52px auto 0
+}
+.seh-reveal .hero-sub{
+  color:rgba(245,240,232,.82);
+  max-width:500px;margin:0 auto 44px;
+  text-align:center;font-size:16px;line-height:1.85
+}
+.seh-reveal .hero-ctas{justify-content:center;margin-bottom:0}
+.seh-reveal .btn-o{
+  color:rgba(245,240,232,.95)!important;
+  border-color:rgba(245,240,232,.55)!important;
+  background:rgba(255,255,255,.12)!important
+}
+.seh-reveal .btn-o:hover{
+  color:var(--yel)!important;
+  border-color:var(--yel)!important;
+  background:rgba(255,239,5,.12)!important;
+  box-shadow:0 0 20px rgba(255,239,5,.2)
+}
+
+/* ── PHOTO LIGHTBOX ── */
+.ps-lb-overlay{
+  position:fixed;inset:0;z-index:8100;
+  background:rgba(0,0,0,.55);
+  backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+  opacity:0;pointer-events:none;
+  transition:opacity .3s ease
+}
+.ps-lb-overlay.on{opacity:1;pointer-events:auto}
+.ps-lb-img{
+  position:fixed;
+  z-index:8200;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 24px 80px rgba(0,0,0,.5);
+  transition:all .35s cubic-bezier(.34,1.2,.64,1);
+  cursor:zoom-out;
+  pointer-events:none;opacity:0
+}
+.ps-lb-img.on{opacity:1;pointer-events:auto}
+.ps-lb-img img{width:100%;height:100%;object-fit:cover;display:block;pointer-events:none}
+.ps-lb-close{
+  position:fixed;top:20px;right:20px;z-index:8300;
+  width:40px;height:40px;border-radius:50%;
+  background:rgba(255,255,255,.18);backdrop-filter:blur(8px);
+  border:1px solid rgba(255,255,255,.3);
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer;opacity:0;pointer-events:none;
+  transition:opacity .3s ease,background .2s;
+  color:#fff;font-size:18px;line-height:1
+}
+.ps-lb-close.on{opacity:1;pointer-events:auto}
+.ps-lb-close:hover{background:rgba(255,255,255,.32)}
+
+/* ── PHOTO STACK GALLERY ── */
+.photo-stack-wrap{
+  position:relative;height:460px;
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:flex-start;
+  overflow:visible;margin-top:12px
+}
+.photo-stack{
+  position:relative;width:220px;height:220px;margin-top:80px
+}
+.ps-photo{
+  position:absolute;left:0;top:0;
+  width:220px;height:220px;
+  border-radius:20px;overflow:hidden;
+  cursor:grab;
+  box-shadow:0 8px 32px rgba(0,0,0,.22),0 2px 8px rgba(0,0,0,.1);
+  transform:translate(0,0) rotate(0deg);
+  transition:box-shadow .3s ease;
+  user-select:none;-webkit-user-select:none;
+  touch-action:none;will-change:transform
+}
+.ps-photo.ps-anim{
+  transition:transform .7s cubic-bezier(.34,1.56,.64,1),box-shadow .3s ease
+}
+.ps-photo:hover{box-shadow:0 16px 48px rgba(0,0,0,.28),0 4px 12px rgba(0,0,0,.12)}
+.ps-photo.ps-drag{cursor:grabbing}
+.ps-photo img{
+  width:100%;height:100%;object-fit:cover;
+  pointer-events:none;
+  -webkit-user-drag:none;user-drag:none
+}
+.ps-hint{
+  position:absolute;bottom:20px;
+  font-size:10px;letter-spacing:3px;text-transform:uppercase;
+  color:rgba(11,3,24,.35);text-align:center;
+  animation:hint-fade 1s ease 4s both
+}
+@keyframes hint-fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@media(max-width:768px){
+  .photo-stack-wrap{height:380px}
+  .photo-stack{margin-top:60px;width:180px;height:180px}
+  .ps-photo{width:180px;height:180px}
+}
+
+/* ── FAQ ── */
+.faq-layout{display:grid;grid-template-columns:1fr 1.6fr;gap:clamp(40px,7vw,96px);align-items:start}
+.faq-l .h2{margin:12px 0 16px}
+.faq-l .lead{margin-bottom:40px}
+.faq-box{background:var(--yel);color:var(--blk);padding:36px}
+.faq-box-title{font-family:var(--fd);font-size:24px;letter-spacing:.04em;margin-bottom:8px}
+.faq-box-sub{font-size:13px;opacity:.55;line-height:1.6;margin-bottom:24px}
+.faq-list{display:flex;flex-direction:column}
+.faq-item{border-bottom:1px solid rgba(30,10,60,.1)}
+.faq-q{display:flex;align-items:center;justify-content:space-between;padding:24px 0;cursor:pointer;gap:20px;transition:color .2s}
+.faq-q:hover{color:#b8900a}
+.faq-q-t{font-family:var(--fd);font-size:19px;letter-spacing:.04em;line-height:1.3}
+.faq-tog{width:30px;height:30px;min-width:30px;border:1px solid rgba(30,10,60,.2);display:flex;align-items:center;justify-content:center;transition:all .2s}
+.faq-tog svg{width:14px;height:14px;stroke:currentColor;fill:none;transition:transform .3s}
+.faq-item.open .faq-tog{background:#b8900a;color:#fff;border-color:#b8900a}
+.faq-item.open .faq-tog svg{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .42s var(--ease)}
+.faq-a.open{max-height:280px}
+.faq-a-t{padding:0 0 24px;font-size:13.5px;color:rgba(11,3,24,.72);line-height:1.85}
+
+/* ── FOOTER ── */
+.footer{background:rgba(10,3,24,0.96);padding:80px 0 36px;border-top:1px solid rgba(255,255,255,.06);color:var(--cream);position:relative;z-index:1}
+.footer-grid{display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:48px;margin-bottom:56px}
+.foot-logo{height:32px;margin-bottom:16px}
+.foot-bname{font-family:var(--fd);font-size:18px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px}
+.foot-btag{font-size:13px;color:rgba(245,240,232,.5);line-height:1.7;max-width:280px}
+.foot-col-h{font-size:9px;letter-spacing:4px;text-transform:uppercase;color:var(--yel);margin-bottom:22px}
+.foot-links{display:flex;flex-direction:column;gap:11px}
+.foot-links a{font-size:13px;color:rgba(245,240,232,.45);transition:color .2s}.foot-links a:hover{color:var(--cream)}
+.foot-cr{display:flex;align-items:flex-start;gap:10px;margin-bottom:14px}
+.foot-cr svg{width:14px;height:14px;stroke:var(--yel);fill:none;flex-shrink:0;margin-top:1px}
+.foot-cr span{font-size:13px;color:rgba(245,240,232,.45);line-height:1.5}
+.foot-cr span b{color:var(--cream)}
+.footer-bot{display:flex;align-items:center;justify-content:space-between;padding-top:36px;border-top:1px solid rgba(255,255,255,.05);flex-wrap:wrap;gap:16px}
+.foot-copy{font-size:11px;color:rgba(255,255,255,.2);letter-spacing:.5px}
+.foot-copy span{color:var(--yel)}
+.foot-soc-row{display:flex;gap:10px}
+.foot-soc{width:36px;height:36px;border:1px solid rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;transition:background .2s,border-color .2s;cursor:pointer}
+.foot-soc svg{width:15px;height:15px;stroke:rgba(245,240,232,.6);fill:none;transition:stroke .2s}
+.foot-soc:hover{background:var(--yel);border-color:var(--yel)}.foot-soc:hover svg{stroke:var(--blk)}
+
+/* ── WA FLOAT ── */
+.wa-wrap{position:fixed;bottom:28px;right:28px;z-index:900;display:flex;align-items:center;gap:12px}
+.wa-tip{background:var(--cream);color:var(--blk);padding:8px 16px;font-size:11px;letter-spacing:2px;text-transform:uppercase;opacity:0;transform:translateX(10px);transition:all .3s var(--ease);pointer-events:none;white-space:nowrap;box-shadow:0 8px 28px rgba(0,0,0,.35)}
+.wa-wrap:hover .wa-tip{opacity:1;transform:none}
+.wa-btn{width:60px;height:60px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 32px rgba(37,211,102,.4);transition:transform .25s var(--ease),box-shadow .25s;position:relative;cursor:pointer}
+.wa-btn::before{content:'';position:absolute;inset:0;border-radius:50%;background:#25D366;animation:wap 2.4s ease-out infinite}
+.wa-btn:hover{transform:scale(1.1);box-shadow:0 12px 44px rgba(37,211,102,.55)}
+.wa-btn svg{position:relative;z-index:1}
+@keyframes wap{0%{transform:scale(1);opacity:.8}100%{transform:scale(1.55);opacity:0}}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1080px){
+  .hero{grid-template-columns:1fr;min-height:100svh}
+  .hero-r{position:absolute;inset:0;opacity:.3}
+  .hero-l{z-index:2;min-height:100svh;padding-top:120px}
+  .hero-l::after{display:none}
+  .hero-stats{grid-template-columns:repeat(2,1fr);gap:24px 0}
+  .hero-stat{border-right:none;padding-bottom:16px;margin-bottom:4px}
+  .prob-grid,.offer-layout,.diff-inner,.faq-layout{grid-template-columns:1fr;gap:44px}
+  .testi-grid{grid-template-columns:repeat(2,1fr)}
+  .ben-grid{grid-template-columns:repeat(2,1fr)}
+  .sol-pillars{grid-template-columns:repeat(3,1fr)}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .proc-track{grid-template-columns:repeat(2,1fr);gap:48px}
+  .proc-track::before{display:none}
+}
+@media(max-width:768px){
+  .nav-cta-btn{display:none}
+  .ben-grid{grid-template-columns:1fr}
+  .sol-pillars{grid-template-columns:1fr}
+  .testi-grid{grid-template-columns:1fr}
+  .port-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto}
+  .p1,.p2,.p3,.p4,.p5,.p6,.p7,.p8,.p9{grid-column:span 1;height:190px}
+  .included-items{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr;gap:36px}
+  .wa-tip{display:none}
+  .diff-inner{grid-template-columns:1fr}
+}
+@media(max-width:480px){
+  .hero-ctas,.cta-btns{flex-direction:column;align-items:stretch}
+  .btn{justify-content:center;white-space:normal;text-align:center;padding-left:20px;padding-right:20px}
+}
+</style>
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav class="nav" id="nav" role="navigation" aria-label="Navegação principal">
+  <a href="#inicio" class="nav-brand" aria-label="Original Productions — início">
+    <img src="logo.webp" alt="Original Productions" class="nav-logo-img" onerror="this.style.display='none'">
+    <div class="nav-wordmark">
+      <b>Original Productions</b>
+      <small>Foto &amp; Vídeo · Rio Grande do Sul</small>
+    </div>
+  </a>
+  <a href="https://wa.me/5551991836181?text=Olá!%20Gostaria%20de%20verificar%20a%20disponibilidade%20para%20os%2015%20anos%20da%20minha%20filha."
+     target="_blank" rel="noopener" class="btn btn-y nav-cta-btn" aria-label="Verificar disponibilidade via WhatsApp">
+    Verificar disponibilidade
+  </a>
+</nav>
+
+<!-- ── SCROLL EXPANSION HERO ── -->
+<section class="seh-section" id="inicio" aria-label="Seção principal">
+
+  <!-- Background — fades out as image expands -->
+  <div id="sehBg" class="seh-bg" aria-hidden="true">
+    <img src="1.webp" alt="">
+    <div style="position:absolute;inset:0;background:rgba(0,0,0,.18)"></div>
+  </div>
+
+  <!-- Viewport-height area where expansion happens -->
+  <div class="seh-inner">
+
+    <!-- Expanding image (centered, grows with scroll) -->
+    <div class="seh-center">
+      <div id="sehMedia" class="seh-media">
+        <img src="4.webp" alt="Festa de 15 anos — Original Productions">
+        <div id="sehVeil" class="seh-veil"></div>
+      </div>
+    </div>
+
+    <!-- Title text — words fly apart on scroll -->
+    <div class="seh-texts" aria-label="O Momento Eternizado">
+      <span id="sehT1" class="seh-t1">O Momento</span>
+      <span id="sehT2" class="seh-t2">Eternizado.</span>
+    </div>
+
+    <!-- Meta labels below the image -->
+    <div class="seh-meta">
+      <span id="sehDate" class="seh-date-lbl">Original Productions · 15 Anos de Mercado</span>
+      <span id="sehScroll" class="seh-scroll-lbl">Role para expandir ↓</span>
+    </div>
+  </div>
+
+  <!-- Revealed after full expansion -->
+  <div id="sehReveal" class="seh-reveal">
+    <div class="w" style="text-align:center">
+      <p class="hero-sub">
+        Foto e vídeo profissional para festas de 15 anos no Rio Grande do Sul.
+        Cobertura exclusiva, autêntica e emocionante — porque esse momento só acontece uma vez.
+      </p>
+      <div class="hero-ctas">
+        <a href="https://wa.me/5551991836181?text=Olá!%20Quero%20garantir%20a%20cobertura%20dos%2015%20anos%20da%20minha%20filha."
+           target="_blank" rel="noopener" class="btn btn-y btn-lg">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Falar no WhatsApp
+        </a>
+        <a href="#oferta" class="btn btn-o btn-lg">Ver disponibilidade da data</a>
+      </div>
+      <div class="hero-stats" role="list">
+        <div class="hero-stat" role="listitem">
+          <div class="hero-stat-n"><span class="cnt" data-n="15">0</span>+</div>
+          <div class="hero-stat-l">Anos de mercado</div>
+        </div>
+        <div class="hero-stat" role="listitem">
+          <div class="hero-stat-n"><span class="cnt" data-n="500">0</span>+</div>
+          <div class="hero-stat-l">Eventos realizados</div>
+        </div>
+        <div class="hero-stat" role="listitem">
+          <div class="hero-stat-n">1</div>
+          <div class="hero-stat-l">Evento por dia</div>
+        </div>
+        <div class="hero-stat" role="listitem">
+          <div class="hero-stat-n"><span class="cnt" data-n="100">0</span>%</div>
+          <div class="hero-stat-l">Entrega garantida</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TICKER ── -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span class="tick-item">Foto</span><span class="tick-sep">·</span>
+    <span class="tick-item">Vídeo</span><span class="tick-sep">·</span>
+    <span class="tick-item">Drone</span><span class="tick-sep">·</span>
+    <span class="tick-item">Exclusividade</span><span class="tick-sep">·</span>
+    <span class="tick-item">15 Anos</span><span class="tick-sep">·</span>
+    <span class="tick-item">Rio Grande do Sul</span><span class="tick-sep">·</span>
+    <span class="tick-item">Ensaio</span><span class="tick-sep">·</span>
+    <span class="tick-item">1 Evento Por Dia</span><span class="tick-sep">·</span>
+    <span class="tick-item">Memórias Eternas</span><span class="tick-sep">·</span>
+    <!-- duplicate for seamless loop -->
+    <span class="tick-item">Foto</span><span class="tick-sep">·</span>
+    <span class="tick-item">Vídeo</span><span class="tick-sep">·</span>
+    <span class="tick-item">Drone</span><span class="tick-sep">·</span>
+    <span class="tick-item">Exclusividade</span><span class="tick-sep">·</span>
+    <span class="tick-item">15 Anos</span><span class="tick-sep">·</span>
+    <span class="tick-item">Rio Grande do Sul</span><span class="tick-sep">·</span>
+    <span class="tick-item">Ensaio</span><span class="tick-sep">·</span>
+    <span class="tick-item">1 Evento Por Dia</span><span class="tick-sep">·</span>
+    <span class="tick-item">Memórias Eternas</span><span class="tick-sep">·</span>
+  </div>
+</div>
+
+<!-- ── PROBLEM ── -->
+<section class="sec sec-blk" id="problema">
+  <div class="w">
+    <div class="prob-grid">
+      <div>
+        <div class="prob-head r">
+          <span class="tag">O que nenhum pai quer sentir</span>
+          <h2 class="h2">E se as fotos<br><span class="em-yel">não ficarem à altura</span><br>do momento?</h2>
+          <p class="lead" style="margin-top:20px">Meses de planejamento, família reunida, a princesa mais bonita do mundo — e as memórias ficam em fotos tremidas, sem emoção, sem vida.</p>
+        </div>
+        <ul class="fears" role="list">
+          <li class="fear r d1">
+            <span class="fear-n" aria-hidden="true">01</span>
+            <div>
+              <div class="fear-title">Fotógrafo sem exclusividade</div>
+              <div class="fear-desc">Ele chegou cansado de outro evento logo antes. Sua filha merecia 100% da atenção.</div>
+            </div>
+          </li>
+          <li class="fear r d2">
+            <span class="fear-n" aria-hidden="true">02</span>
+            <div>
+              <div class="fear-title">Qualidade abaixo do esperado</div>
+              <div class="fear-desc">Iluminação ruim, fotos desfocadas, cortes no vídeo. Memórias que deveriam durar para sempre, desperdiçadas.</div>
+            </div>
+          </li>
+          <li class="fear r d3">
+            <span class="fear-n" aria-hidden="true">03</span>
+            <div>
+              <div class="fear-title">Entrega que nunca chega</div>
+              <div class="fear-desc">Espera de meses sem prazo definido. O material do dia mais especial perdido no tempo.</div>
+            </div>
+          </li>
+          <li class="fear r d4">
+            <span class="fear-n" aria-hidden="true">04</span>
+            <div>
+              <div class="fear-title">Momentos irrecuperáveis perdidos</div>
+              <div class="fear-desc">A entrada, o abraço do pai, as lágrimas da mãe — e ninguém estava olhando na hora certa.</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="prob-img-col r d2">
+        <div class="prob-img">
+          <img src="2.webp" alt="Festa de 15 anos capturada pela Original Productions" loading="lazy">
+        </div>
+        <div class="prob-badge" aria-label="15 anos de experiência">
+          <b class="prob-badge-n">15</b>
+          <span class="prob-badge-l">Anos de experiência</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- ── SOLUTION ── -->
+<section class="sec sec-surf" id="solucao">
+  <div class="w">
+    <div class="sol-wrap">
+      <div class="sol-logo r" role="img" aria-label="Logo Original Productions"></div>
+      <span class="tag r d1">A solução que você procurava</span>
+      <h2 class="h2 r d2">Apresentamos a <span class="em-yel anim-ul">Original Productions<svg viewBox="0 0 300 16" preserveAspectRatio="none" aria-hidden="true"><path d="M 0,10 Q 75,2 150,10 Q 225,18 300,10"/></svg></span>.<br>Especialistas em transformar emoção em arte.</h2>
+      <p class="lead r d3">Há 15 anos capturando os momentos mais especiais do Rio Grande do Sul. Nossa produção audiovisual vai além do técnico — criamos narrativas visuais que fazem você reviver cada detalhe como se fosse o primeiro dia.</p>
+      <div class="sol-pillars r d4" role="list">
+        <div class="sol-pill" role="listitem">
+          <div class="sol-pill-n">15</div>
+          <div class="sol-pill-l">Anos de mercado</div>
+        </div>
+        <div class="sol-pill" role="listitem">
+          <div class="sol-pill-n">1</div>
+          <div class="sol-pill-l">Evento por dia</div>
+        </div>
+        <div class="sol-pill" role="listitem">
+          <div class="sol-pill-n">100%</div>
+          <div class="sol-pill-l">Entrega garantida</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- ── BENEFITS ── -->
+<section class="sec sec-blk" id="beneficios">
+  <div class="w">
+    <div class="ben-head">
+      <span class="tag r">Por que nos escolher</span>
+      <h2 class="h2 r d1">Tudo o que você precisa para<br><span class="em-yel anim-ul">não se arrepender depois.<svg viewBox="0 0 300 16" preserveAspectRatio="none" aria-hidden="true"><path d="M 0,10 Q 75,2 150,10 Q 225,18 300,10"/></svg></span></h2>
+    </div>
+    <div class="ben-grid">
+      <div class="ben-card has-bg bc-imersiva r">
+        <div class="ben-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="m15 10 4.553-2.069A1 1 0 0 1 21 8.82v6.361a1 1 0 0 1-1.447.894L15 14M3 8a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+        </div>
+        <h3 class="h3">Filmagem Imersiva e Autêntica</h3>
+        <p>Não roteirizamos. Captamos a realidade — risadas espontâneas, lágrimas de emoção, abraços inesperados. Tudo como realmente aconteceu.</p>
+      </div>
+      <div class="ben-card has-bg bc-resolucao r d1">
+        <div class="ben-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M6.343 6.343a8 8 0 1 0 11.314 11.314A8 8 0 0 0 6.343 6.343ZM2 12h2M20 12h2M12 2v2M12 20v2"/></svg>
+        </div>
+        <h3 class="h3">Fotografia de Alta Resolução</h3>
+        <p>Cada foto é uma obra de arte. Iluminação profissional, composição cuidadosa e pós-produção elegante para imagens que duram gerações.</p>
+      </div>
+      <div class="ben-card has-bg bc-drone r d2">
+        <div class="ben-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 2L8 6H4v4L2 12l2 2v4h4l4 4 4-4h4v-4l2-2-2-2V6h-4z"/><circle cx="12" cy="12" r="2"/></svg>
+        </div>
+        <h3 class="h3">Imagens Aéreas com Drone</h3>
+        <p>Perspectivas únicas e cinematográficas. O drone adiciona grandiosidade ao seu evento de forma espetacular e memorável.</p>
+      </div>
+      <div class="ben-card has-bg bc-exclusividade r">
+        <div class="ben-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        </div>
+        <h3 class="h3">Exclusividade Total no Dia</h3>
+        <p>Atendemos apenas um evento por dia. Sua festa recebe 100% da nossa atenção, energia e equipamentos do começo ao fim.</p>
+      </div>
+      <div class="ben-card has-bg bc-prevento r d1">
+        <div class="ben-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2Z"/><path d="M12 12m-1 0a1 1 0 1 0 2 0 1 1 0 1 0-2 0"/><path d="M6 7V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2"/></svg>
+        </div>
+        <h3 class="h3">Ensaio Pré-Evento</h3>
+        <p>Antes da festa, realizamos um ensaio para capturar a debutante no auge da sua beleza e personalidade — imagens que vão durar a vida toda.</p>
+      </div>
+      <div class="ben-card has-bg bc-garantia r d2">
+        <div class="ben-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="m9 12 2 2 4-4"/><path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z"/></svg>
+        </div>
+        <h3 class="h3">Garantia de Entrega</h3>
+        <p>Comprometidos com prazo e qualidade. Você recebe seu material completo dentro do prazo acordado — sem surpresas, sem atrasos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- ── PROCESS ── -->
+<section class="sec sec-surf" id="como-funciona">
+  <div class="w">
+    <div class="proc-head">
+      <span class="tag r">Simples e sem estresse</span>
+      <h2 class="h2 r d1">Como funciona</h2>
+      <p class="lead r d2">Do primeiro contato até a entrega, cuidamos de tudo para que você foque no que realmente importa: aproveitar cada segundo com sua filha.</p>
+    </div>
+    <div class="proc-track" role="list">
+      <div class="proc-step r" role="listitem">
+        <div class="proc-n" aria-hidden="true">01</div>
+        <h3 class="h3">Primeiro Contato</h3>
+        <p>Fale pelo WhatsApp, verifique a disponibilidade da data e conheça os pacotes. Respondemos em até 2 horas.</p>
+      </div>
+      <div class="proc-step r d1" role="listitem">
+        <div class="proc-n" aria-hidden="true">02</div>
+        <h3 class="h3">Garantia da Data</h3>
+        <p>Confirme com antecedência. Como trabalhamos com exclusividade, as datas são limitadas — reserve logo a sua.</p>
+      </div>
+      <div class="proc-step r d2" role="listitem">
+        <div class="proc-n" aria-hidden="true">03</div>
+        <h3 class="h3">Ensaio &amp; Planejamento</h3>
+        <p>Realizamos o ensaio e alinhamos todos os detalhes: cronograma, locais especiais e momentos que não podem faltar.</p>
+      </div>
+      <div class="proc-step r d3" role="listitem">
+        <div class="proc-n" aria-hidden="true">04</div>
+        <h3 class="h3">Entrega do Material</h3>
+        <p>Fotos editadas, filme do evento e imagens aéreas em alta resolução, entregues dentro do prazo garantido.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- ── PORTFOLIO ── -->
+<section class="sec sec-surf" id="portfolio">
+  <div class="w">
+    <div class="port-head">
+      <div class="port-head-left">
+        <span class="tag r">Nosso trabalho fala por si</span>
+        <h2 class="h2 r d1">Momentos reais.<br><span class="em-yel anim-ul">Emoções eternas.<svg viewBox="0 0 300 16" preserveAspectRatio="none" aria-hidden="true"><path d="M 0,10 Q 75,2 150,10 Q 225,18 300,10"/></svg></span></h2>
+      </div>
+      <a href="https://wa.me/5551991836181?text=Olá!%20Gostaria%20de%20ver%20mais%20do%20portfólio." target="_blank" rel="noopener" class="btn btn-o r d2">Ver portfólio completo</a>
+    </div>
+    <div class="photo-stack-wrap r d1" aria-label="Galeria interativa — arraste as fotos">
+      <div id="photoStack" class="photo-stack">
+        <!-- rendered in reverse DOM order so higher z-index stays on top visually -->
+        <div class="ps-photo" data-tx="320"  data-ty="44" data-rot="3.5"  data-z="10" style="z-index:10">
+          <img src="9.webp" alt="Família e celebração" draggable="false">
+        </div>
+        <div class="ps-photo" data-tx="160"  data-ty="22" data-rot="2.5"  data-z="20" style="z-index:20">
+          <img src="7.webp" alt="Momentos especiais" draggable="false">
+        </div>
+        <div class="ps-photo" data-tx="0"    data-ty="8"  data-rot="1"    data-z="60" style="z-index:60">
+          <img src="5.webp" alt="Festa de 15 anos" draggable="false">
+        </div>
+        <div class="ps-photo" data-tx="-160" data-ty="32" data-rot="-1.5" data-z="40" style="z-index:40">
+          <img src="3.webp" alt="Ensaio externo" draggable="false">
+        </div>
+        <div class="ps-photo" data-tx="-320" data-ty="15" data-rot="-3"   data-z="50" style="z-index:50">
+          <img src="1.webp" alt="Ensaio fotográfico" draggable="false">
+        </div>
+      </div>
+      <p class="ps-hint">Arraste as fotos</p>
+    </div>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- ── TESTIMONIALS ── -->
+<section class="sec sec-blk" id="depoimentos">
+  <div class="w">
+    <div class="testi-head">
+      <span class="tag r">O que as famílias dizem</span>
+      <h2 class="h2 r d1">Avaliações reais.<br><span class="em-yel">Emoções verdadeiras.</span></h2>
+    </div>
+    <div class="testi-grid">
+      <article class="testi-card r">
+        <div class="testi-stars" aria-label="5 estrelas"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+        <p class="testi-txt">"Quando assisti ao filme pela primeira vez, chorei igual no dia. Eles capturaram até aquele abraço de surpresa do pai da Valentina que eu nem vi acontecer. É como se vivêssemos tudo de novo."</p>
+        <div class="testi-author">
+          <div class="testi-av" aria-hidden="true">C</div>
+          <div><div class="testi-name">Claudia R.</div><div class="testi-role">Mãe da Valentina · Porto Alegre</div></div>
+        </div>
+        <div class="testi-g"><span style="color:#4285F4;font-weight:700">G</span>Avaliação verificada no Google</div>
+      </article>
+      <article class="testi-card r d1">
+        <div class="testi-stars" aria-label="5 estrelas"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+        <p class="testi-txt">"Contratei outros fotógrafos antes e sempre ficou aquele gosto de podia ter sido melhor. Na festa da Ana Luíza, a Original Productions estava em cada detalhe. O drone ficou inacreditável."</p>
+        <div class="testi-author">
+          <div class="testi-av" aria-hidden="true">M</div>
+          <div><div class="testi-name">Marcos F.</div><div class="testi-role">Pai da Ana Luíza · Canoas</div></div>
+        </div>
+        <div class="testi-g"><span style="color:#4285F4;font-weight:700">G</span>Avaliação verificada no Google</div>
+      </article>
+      <article class="testi-card r d2">
+        <div class="testi-stars" aria-label="5 estrelas"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+        <p class="testi-txt">"Eles sabiam os nomes de todos da família e nunca atrapalharam a festa. Apareciam só na hora certa para registrar o momento perfeito. Profissionalismo impecável do início ao fim."</p>
+        <div class="testi-author">
+          <div class="testi-av" aria-hidden="true">P</div>
+          <div><div class="testi-name">Patricia L.</div><div class="testi-role">Mãe da Isabela · São Leopoldo</div></div>
+        </div>
+        <div class="testi-g"><span style="color:#4285F4;font-weight:700">G</span>Avaliação verificada no Google</div>
+      </article>
+      <article class="testi-card r">
+        <div class="testi-stars" aria-label="5 estrelas"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+        <p class="testi-txt">"Depois de ver o resultado, entendi por que atendem apenas um evento por dia. Você sente que sua festa foi a mais importante do mundo — porque para eles foi. Vale cada centavo."</p>
+        <div class="testi-author">
+          <div class="testi-av" aria-hidden="true">R</div>
+          <div><div class="testi-name">Renata M.</div><div class="testi-role">Mãe da Sophia · Novo Hamburgo</div></div>
+        </div>
+        <div class="testi-g"><span style="color:#4285F4;font-weight:700">G</span>Avaliação verificada no Google</div>
+      </article>
+      <article class="testi-card r d1">
+        <div class="testi-stars" aria-label="5 estrelas"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+        <p class="testi-txt">"O ensaio foi uma experiência incrível. Minha filha chegou na festa radiante, com autoestima lá em cima. E as fotos do dia... são de tirar o fôlego. Recomendo sem hesitar."</p>
+        <div class="testi-author">
+          <div class="testi-av" aria-hidden="true">A</div>
+          <div><div class="testi-name">Adriana S.</div><div class="testi-role">Mãe da Maria Fernanda · Caxias do Sul</div></div>
+        </div>
+        <div class="testi-g"><span style="color:#4285F4;font-weight:700">G</span>Avaliação verificada no Google</div>
+      </article>
+      <article class="testi-card r d2">
+        <div class="testi-stars" aria-label="5 estrelas"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+        <p class="testi-txt">"Minha filha chora toda vez que assiste ao filme. 'Mãe, eu não sabia que tava tão bonita.' Isso não tem preço. Agradeço por eternizar esse momento da forma mais linda possível."</p>
+        <div class="testi-author">
+          <div class="testi-av" aria-hidden="true">F</div>
+          <div><div class="testi-name">Fernanda C.</div><div class="testi-role">Mãe da Letícia · Gramado</div></div>
+        </div>
+        <div class="testi-g"><span style="color:#4285F4;font-weight:700">G</span>Avaliação verificada no Google</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ── DIFFERENTIATOR ── -->
+<section class="sec sec-yel diff-sec" id="diferencial">
+  <div class="diff-wm" aria-hidden="true">1</div>
+  <div class="w">
+    <div class="diff-inner">
+      <div class="diff-l r">
+        <span class="tag">Nosso maior diferencial</span>
+        <h2 class="h2">Exclusividade que<br><span style="font-style:italic">muda tudo.</span></h2>
+        <p class="lead" style="margin-top:16px">Enquanto outros fotógrafos chegam ao seu evento cansados de outro trabalho pela manhã, a Original Productions está descansada, preparada e com foco total no que mais importa: <b>a sua filha.</b></p>
+        <p class="lead" style="margin-top:14px">15 anos construindo essa reputação. Uma data, uma família, um compromisso.</p>
+        <div style="margin-top:40px">
+          <a href="https://wa.me/5551991836181?text=Olá!%20Quero%20garantir%20exclusividade%20na%20festa%20dos%2015%20anos%20da%20minha%20filha!" target="_blank" rel="noopener" class="btn btn-k">Quero essa exclusividade</a>
+        </div>
+      </div>
+      <div class="diff-r r d2">
+        <div class="diff-big">Apenas<br><span style="font-family:'Didact Gothic',sans-serif;font-style:normal;font-size:1.4em;letter-spacing:-.02em">1</span></div>
+        <div class="diff-big-sub">Evento por dia — sem exceções</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- ── OFFER ── -->
+<section class="sec sec-blk" id="oferta">
+  <div class="w">
+    <div class="offer-layout">
+      <div class="offer-img r">
+        <img src="2.webp" alt="Debutante — cobertura completa de festa de 15 anos" loading="lazy">
+      </div>
+      <div class="offer-r r d1">
+        <span class="tag">O que está incluso</span>
+        <h2 class="h2">Cobertura <span class="em-yel">completa</span><br>do seu evento.</h2>
+        <p class="lead">Tudo o que sua filha merece para eternizar o momento mais especial da vida dela.</p>
+        <div class="pkgs" style="margin-top:0">
+          <div class="pkg">
+            <div class="pkg-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+            </div>
+            <div><div class="pkg-name">Ensaio Fotográfico</div><div class="pkg-desc">Sessão pré-evento com a debutante</div></div>
+          </div>
+          <div class="pkg feat">
+            <div class="pkg-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 2L8 6H4v4L2 12l2 2v4h4l4 4 4-4h4v-4l2-2-2-2V6h-4z"/><circle cx="12" cy="12" r="2"/></svg>
+            </div>
+            <div><div class="pkg-name">Imagens com Drone</div><div class="pkg-desc">Perspectivas aéreas cinematográficas</div></div>
+            <div class="pkg-tag">Exclusivo</div>
+          </div>
+          <div class="pkg">
+            <div class="pkg-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="m15 10 4.553-2.069A1 1 0 0 1 21 8.82v6.361a1 1 0 0 1-1.447.894L15 14M3 8a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+            </div>
+            <div><div class="pkg-name">Cobertura Completa no Dia</div><div class="pkg-desc">Foto e vídeo do evento do início ao fim</div></div>
+          </div>
+        </div>
+        <div class="included">
+          <div class="included-head">Tudo incluso</div>
+          <ul class="included-items" role="list">
+            <li class="inc-item">Equipe especializada em 15 anos</li>
+            <li class="inc-item">Equipamento profissional completo</li>
+            <li class="inc-item">Edição e pós-produção completa</li>
+            <li class="inc-item">Filme do evento em alta qualidade</li>
+            <li class="inc-item">Álbum digital com todas as fotos</li>
+            <li class="inc-item">Entrega no prazo garantido</li>
+            <li class="inc-item">Exclusividade total no evento</li>
+            <li class="inc-item">15 anos de experiência</li>
+          </ul>
+        </div>
+        <div style="margin-top:36px">
+          <a href="https://wa.me/5551991836181?text=Olá!%20Quero%20saber%20sobre%20a%20cobertura%20completa%20dos%2015%20anos%20da%20minha%20filha.%20Pode%20me%20enviar%20valores%20e%20disponibilidade%3F" target="_blank" rel="noopener" class="btn btn-y btn-lg">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Solicitar proposta
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- ── CTA ── -->
+<section class="cta-sec">
+  <div class="cta-in w">
+    <span class="tag r">Antes que sua data seja reservada</span>
+    <h2 class="cta-title r d1">A data da festa<br>da sua filha é <em><span class="anim-ul">única.<svg viewBox="0 0 300 16" preserveAspectRatio="none" aria-hidden="true"><path d="M 0,10 Q 75,2 150,10 Q 225,18 300,10"/></svg></span></em><br>As vagas também.</h2>
+    <p class="lead cta-sub r d2">Como trabalhamos com exclusividade, atendemos apenas um evento por dia. Verifique agora se sua data ainda está disponível.</p>
+    <div class="cta-btns r d3">
+      <a href="https://wa.me/5551991836181?text=Olá!%20Quero%20verificar%20a%20disponibilidade%20da%20data%20dos%2015%20anos%20da%20minha%20filha." target="_blank" rel="noopener" class="btn btn-y btn-lg">Ver disponibilidade da minha data</a>
+      <a href="https://wa.me/5551991836181?text=Olá!%20Tenho%20interesse%20na%20cobertura%20dos%2015%20anos%20da%20minha%20filha.%20Gostaria%20de%20mais%20informações." target="_blank" rel="noopener" class="btn btn-o btn-lg">Falar com especialista</a>
+    </div>
+    <div class="urgency r d4">
+      <div class="urgency-dot" aria-hidden="true"></div>
+      <span>Datas de alta temporada enchem rapidamente</span>
+    </div>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- ── FAQ ── -->
+<section class="sec sec-blk" id="faq">
+  <div class="w">
+    <div class="faq-layout">
+      <div class="faq-l">
+        <span class="tag r">Dúvidas frequentes</span>
+        <h2 class="h2 r d1">Temos resposta<br>para <span class="em-yel">tudo.</span></h2>
+        <p class="lead r d2">Ainda tem dúvidas? Nossa equipe responde no WhatsApp em minutos.</p>
+        <div class="faq-box r d3">
+          <div class="faq-box-title">Prefere conversar?</div>
+          <div class="faq-box-sub">Tire todas as suas dúvidas diretamente com a gente.</div>
+          <a href="https://wa.me/5551991836181?text=Olá!%20Tenho%20algumas%20dúvidas%20sobre%20a%20cobertura%20dos%2015%20anos." target="_blank" rel="noopener" class="btn btn-k">Falar no WhatsApp</a>
+        </div>
+      </div>
+      <div class="faq-list r d1">
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+            <span class="faq-q-t">Com quanto tempo de antecedência devo contratar?</span>
+            <div class="faq-tog" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></div>
+          </button>
+          <div class="faq-a" role="region"><p class="faq-a-t">Recomendamos contratar com no mínimo 6 meses de antecedência, especialmente para festas na alta temporada (outubro a março). Como trabalhamos com exclusividade — apenas um evento por dia — as datas se esgotam rapidamente.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+            <span class="faq-q-t">Vocês atendem em todo o Rio Grande do Sul?</span>
+            <div class="faq-tog" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></div>
+          </button>
+          <div class="faq-a" role="region"><p class="faq-a-t">Sim! Atendemos em todo o RS. Nossa base é na Região Metropolitana de Porto Alegre, mas viajamos para Caxias do Sul, Serra Gaúcha, Litoral, Vale dos Sinos, Vale do Taquari e demais regiões. Entre em contato para verificar deslocamento.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+            <span class="faq-q-t">Em quanto tempo recebo as fotos e o vídeo?</span>
+            <div class="faq-tog" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></div>
+          </button>
+          <div class="faq-a" role="region"><p class="faq-a-t">O prazo é acordado em contrato e cumprido rigorosamente. Em geral, fotos editadas em até 30 dias e o filme em até 60 dias após a festa. Isso garante uma edição cuidadosa e com a qualidade que o momento merece.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+            <span class="faq-q-t">O drone pode ser usado em qualquer local?</span>
+            <div class="faq-tog" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></div>
+          </button>
+          <div class="faq-a" role="region"><p class="faq-a-t">O uso depende das regulamentações da ANAC e das condições do local. Nossos operadores são certificados e realizamos toda análise prévia. Em locais com restrição, alternativas criativas são utilizadas para garantir resultados incríveis.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+            <span class="faq-q-t">Como funciona o ensaio pré-evento?</span>
+            <div class="faq-tog" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></div>
+          </button>
+          <div class="faq-a" role="region"><p class="faq-a-t">O ensaio é realizado dias antes da festa em local escolhido em conjunto — espaço urbano, parque, campo ou qualquer lugar que combine com a personalidade da debutante. Gera imagens para convites, redes sociais e álbum.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+            <span class="faq-q-t">Quais formas de pagamento são aceitas?</span>
+            <div class="faq-tog" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></div>
+          </button>
+          <div class="faq-a" role="region"><p class="faq-a-t">Aceitamos Pix, transferência bancária e cartão de crédito (parcelamento disponível). O pagamento é feito em etapas: sinal para garantir a data e o restante conforme acordado em contrato.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer class="footer">
+  <div class="w">
+    <div class="footer-grid">
+      <div>
+        <img src="logo.webp" alt="Original Productions" class="foot-logo" onerror="this.style.display='none'">
+        <div class="foot-bname">Original Productions</div>
+        <p class="foot-btag">Especialistas em foto e vídeo para festas de 15 anos no Rio Grande do Sul. 15 anos transformando momentos em memórias eternas.</p>
+      </div>
+      <div>
+        <div class="foot-col-h">Navegação</div>
+        <ul class="foot-links">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#solucao">Sobre nós</a></li>
+          <li><a href="#beneficios">Benefícios</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="#oferta">Cobertura</a></li>
+          <li><a href="#faq">Dúvidas</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="foot-col-h">Serviços</div>
+        <ul class="foot-links">
+          <li><a href="#oferta">Ensaio Fotográfico</a></li>
+          <li><a href="#oferta">Filmagem do Evento</a></li>
+          <li><a href="#oferta">Imagens com Drone</a></li>
+          <li><a href="#oferta">Edição Profissional</a></li>
+          <li><a href="#oferta">Álbum Digital</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="foot-col-h">Contato</div>
+        <div class="foot-cr">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.84a16 16 0 0 0 6.29 6.29l1.14-.97a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span><b>(51) 99183-6181</b><br>WhatsApp disponível</span>
+        </div>
+        <div class="foot-cr">
+          <svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Rio Grande do Sul<br>Atendemos todo o estado</span>
+        </div>
+        <div style="margin-top:20px">
+          <a href="https://wa.me/5551991836181" target="_blank" rel="noopener" class="btn btn-y" style="font-size:10px;padding:12px 20px">Falar agora</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bot">
+      <div class="foot-copy">© 2024 Original Productions. Todos os direitos reservados. Feito com <span>♥</span> no Rio Grande do Sul.</div>
+      <div class="foot-soc-row">
+        <a href="#" class="foot-soc" aria-label="Instagram">
+          <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+        </a>
+        <a href="#" class="foot-soc" aria-label="YouTube">
+          <svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor"/></svg>
+        </a>
+        <a href="https://wa.me/5551991836181" target="_blank" rel="noopener" class="foot-soc" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" stroke="currentColor" stroke-width="0"/><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" fill="currentColor"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ── WA FLOAT ── -->
+<div class="wa-wrap">
+  <div class="wa-tip" aria-hidden="true">Falar no WhatsApp</div>
+  <a href="https://wa.me/5551991836181?text=Olá!%20Vi%20o%20site%20da%20Original%20Productions%20e%20gostaria%20de%20informações%20sobre%20a%20cobertura%20dos%2015%20anos%20da%20minha%20filha."
+     target="_blank" rel="noopener" class="wa-btn" aria-label="Falar no WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="white" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+    </svg>
+  </a>
+</div>
+
+<script>
+/* nav scroll */
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>nav.classList.toggle('stuck',scrollY>72),{passive:true});
+
+/* reveal */
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('v')}),{threshold:.1,rootMargin:'0px 0px -36px 0px'});
+document.querySelectorAll('.r').forEach(el=>obs.observe(el));
+
+/* count-up */
+const cobs=new IntersectionObserver(es=>es.forEach(e=>{
+  if(!e.isIntersecting)return;
+  const el=e.target,n=+el.dataset.n,t0=performance.now(),dur=1400;
+  const tick=now=>{const p=Math.min((now-t0)/dur,1);el.textContent=Math.floor((1-Math.pow(1-p,3))*n);if(p<1)requestAnimationFrame(tick);else el.textContent=n};
+  requestAnimationFrame(tick);cobs.unobserve(el);
+}),{threshold:.5});
+document.querySelectorAll('.cnt').forEach(el=>cobs.observe(el));
+
+/* hero parallax */
+const heroR=document.querySelector('.hero-r');
+if(heroR)window.addEventListener('scroll',()=>{if(scrollY<innerHeight)heroR.style.transform=`translateY(${scrollY*.2}px)`},{passive:true});
+
+/* FAQ */
+function toggleFaq(btn){
+  const item=btn.closest('.faq-item'),ans=item.querySelector('.faq-a'),open=item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i=>{i.classList.remove('open');i.querySelector('.faq-a').classList.remove('open');i.querySelector('.faq-q').setAttribute('aria-expanded','false')});
+  if(!open){item.classList.add('open');ans.classList.add('open');btn.setAttribute('aria-expanded','true')}
+}
+
+/* smooth anchor */
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{
+  const t=document.querySelector(a.getAttribute('href'));
+  if(!t)return;e.preventDefault();window.scrollTo({top:t.getBoundingClientRect().top+scrollY-72,behavior:'smooth'});
+}));
+
+/* ── floating bubbles ── */
+(function(){
+  const wrap=document.createElement('div');
+  wrap.id='bubbles';
+  document.body.prepend(wrap);
+  const cols=[
+    'rgba(175,109,255,OP)','rgba(255,100,180,OP)',
+    'rgba(120,190,255,OP)','rgba(255,220,80,OP)',
+    'rgba(200,150,255,OP)','rgba(255,160,200,OP)'
+  ];
+  for(let i=0;i<24;i++){
+    const b=document.createElement('div');
+    b.className='bubble';
+    const sz=(20+Math.random()*95).toFixed(0);
+    const op=(0.1+Math.random()*0.18).toFixed(2);
+    const col=cols[Math.floor(Math.random()*cols.length)].replace('OP',op);
+    const dur=(13+Math.random()*22).toFixed(1)+'s';
+    const delay=(-(Math.random()*22)).toFixed(1)+'s';
+    const left=(Math.random()*100).toFixed(1)+'%';
+    const bottom=(-10-Math.random()*20).toFixed(1)+'%';
+    const tx=((Math.random()-.5)*140).toFixed(0)+'px';
+    b.style.cssText=`width:${sz}px;height:${sz}px;background:${col};left:${left};bottom:${bottom};--bd:${dur};--bd-delay:${delay};--bx:${tx};--bop:${op};border:1px solid rgba(255,255,255,0.3);`;
+    wrap.appendChild(b);
+  }
+})();
+
+/* ── photo stack gallery ── */
+(function(){
+  const stack=document.getElementById('photoStack');
+  if(!stack)return;
+  const photos=Array.from(stack.querySelectorAll('.ps-photo'));
+  let spread=false;
+
+  /* trigger on viewport entry */
+  const pobs=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting&&!spread){spread=true;spreadPhotos();pobs.unobserve(e.target)}
+    });
+  },{threshold:.35});
+  pobs.observe(stack);
+
+  function getScale(){return Math.min(1,window.innerWidth/1100)}
+
+  function spreadPhotos(){
+    const sc=getScale();
+    const isMobile=window.innerWidth<640;
+    photos.forEach((p,i)=>{
+      const tx=parseFloat(p.dataset.tx)*(isMobile?sc*.8:sc);
+      const ty=parseFloat(p.dataset.ty);
+      const rot=parseFloat(p.dataset.rot||0);
+      setTimeout(()=>{
+        p.classList.add('ps-anim');
+        p.style.transform=`translate(${tx}px,${ty}px) rotate(${rot}deg)`;
+      },i*130+180);
+    });
+  }
+
+  /* drag with pointer events */
+  photos.forEach(p=>{
+    let ox=0,oy=0,sx=0,sy=0,dragging=false,origZ=p.style.zIndex;
+
+    p.addEventListener('pointerdown',e=>{
+      dragging=true;
+      p.classList.add('ps-drag');
+      p.classList.remove('ps-anim');
+      const m=new DOMMatrix(getComputedStyle(p).transform);
+      ox=m.m41;oy=m.m42;
+      sx=e.clientX;sy=e.clientY;
+      origZ=p.style.zIndex;
+      p.style.zIndex=9999;
+      p.setPointerCapture(e.pointerId);
+      e.preventDefault();
+    });
+
+    p.addEventListener('pointermove',e=>{
+      if(!dragging)return;
+      const rot=parseFloat(p.dataset.rot||0);
+      p.style.transform=`translate(${ox+(e.clientX-sx)}px,${oy+(e.clientY-sy)}px) rotate(${rot}deg) scale(1.06)`;
+    });
+
+    const release=()=>{
+      if(!dragging)return;
+      dragging=false;
+      p.classList.remove('ps-drag');
+      p.classList.add('ps-anim');
+      p.style.zIndex=origZ;
+      /* spring back */
+      const sc=getScale();
+      const isMobile=window.innerWidth<640;
+      const tx=parseFloat(p.dataset.tx)*(isMobile?sc*.8:sc);
+      const ty=parseFloat(p.dataset.ty);
+      const rot=parseFloat(p.dataset.rot||0);
+      p.style.transform=`translate(${tx}px,${ty}px) rotate(${rot}deg)`;
+    };
+    p.addEventListener('pointerup',release);
+    p.addEventListener('pointercancel',release);
+  });
+})();
+
+/* ── scroll expansion hero ── */
+(function(){
+  const bg     = document.getElementById('sehBg');
+  const media  = document.getElementById('sehMedia');
+  const veil   = document.getElementById('sehVeil');
+  const t1     = document.getElementById('sehT1');
+  const t2     = document.getElementById('sehT2');
+  const dateLbl= document.getElementById('sehDate');
+  const scrlLbl= document.getElementById('sehScroll');
+  const reveal = document.getElementById('sehReveal');
+  if(!media) return;
+
+  let prog=0, expanded=false, touchY=0;
+  const mob=()=>window.innerWidth<768;
+
+  function lockPage(){ document.body.style.overflow='hidden' }
+  function unlockPage(){ document.body.style.overflow='' }
+
+  function update(){
+    const W=window.innerWidth, H=window.innerHeight;
+    const m=mob();
+    const mw=Math.min(300+prog*(m?650:1250), W*0.99);
+    const mh=Math.min(400+prog*(m?200:400),  H*0.97);
+    const tx=prog*(m?48:40); /* vw units */
+
+    media.style.width  = mw+'px';
+    media.style.height = mh+'px';
+
+    if(bg)      bg.style.opacity   = Math.max(0, 1-prog);
+    if(veil)    veil.style.opacity  = Math.max(0, 0.45-prog*0.45);
+    if(t1)      t1.style.transform  = `translateX(-${tx}vw)`;
+    if(t2)      t2.style.transform  = `translateX(${tx}vw)`;
+    if(dateLbl) dateLbl.style.transform = `translateX(-${tx*0.55}vw)`;
+    if(scrlLbl) scrlLbl.style.opacity   = Math.max(0, 1-prog*5);
+
+    if(prog>=1){
+      if(reveal) reveal.classList.add('on');
+    } else if(prog<0.75){
+      if(reveal) reveal.classList.remove('on');
+    }
+  }
+
+  function onWheel(e){
+    if(expanded && e.deltaY<0 && window.scrollY<=5){
+      expanded=false; lockPage(); e.preventDefault();
+    } else if(!expanded){
+      e.preventDefault();
+      prog=Math.min(Math.max(prog+e.deltaY*0.0009,0),1);
+      update();
+      if(prog>=1){ expanded=true; unlockPage(); }
+    }
+  }
+
+  function onTouchStart(e){ touchY=e.touches[0].clientY; }
+
+  function onTouchMove(e){
+    if(!touchY) return;
+    const cy=e.touches[0].clientY, dy=touchY-cy;
+    if(expanded && dy<-20 && window.scrollY<=5){
+      expanded=false; lockPage(); e.preventDefault();
+    } else if(!expanded){
+      e.preventDefault();
+      const fac=dy<0?0.008:0.009;
+      prog=Math.min(Math.max(prog+dy*fac,0),1);
+      update();
+      if(prog>=1){ expanded=true; unlockPage(); }
+      touchY=cy;
+    }
+  }
+
+  function onTouchEnd(){ touchY=0; }
+
+  window.addEventListener('wheel',      onWheel,      {passive:false});
+  window.addEventListener('touchstart', onTouchStart, {passive:true});
+  window.addEventListener('touchmove',  onTouchMove,  {passive:false});
+  window.addEventListener('touchend',   onTouchEnd,   {passive:true});
+
+  lockPage();
+  update(); /* set initial state */
+})();
+
+/* ── photo lightbox ── */
+(function(){
+  const overlay = document.createElement('div');
+  overlay.className = 'ps-lb-overlay';
+  document.body.appendChild(overlay);
+
+  const lbImg = document.createElement('div');
+  lbImg.className = 'ps-lb-img';
+  lbImg.innerHTML = '<img src="" alt="Foto ampliada">';
+  document.body.appendChild(lbImg);
+
+  const closeBtn = document.createElement('div');
+  closeBtn.className = 'ps-lb-close';
+  closeBtn.innerHTML = '&#10005;';
+  closeBtn.setAttribute('role','button');
+  closeBtn.setAttribute('aria-label','Fechar');
+  document.body.appendChild(closeBtn);
+
+  const lbImgEl = lbImg.querySelector('img');
+  let open = false;
+
+  function openLb(photo) {
+    const rect = photo.getBoundingClientRect();
+    const img  = photo.querySelector('img');
+    if (!img) return;
+
+    /* start from photo's current position */
+    lbImg.style.left   = rect.left   + 'px';
+    lbImg.style.top    = rect.top    + 'px';
+    lbImg.style.width  = rect.width  + 'px';
+    lbImg.style.height = rect.height + 'px';
+    lbImg.style.borderRadius = '20px';
+    lbImgEl.src = img.src;
+
+    /* force reflow so transition fires */
+    lbImg.getBoundingClientRect();
+
+    const VW = window.innerWidth, VH = window.innerHeight;
+    const maxW = Math.min(VW * 0.82, 560);
+    const maxH = Math.min(VH * 0.78, 700);
+
+    lbImg.style.width  = maxW + 'px';
+    lbImg.style.height = maxH + 'px';
+    lbImg.style.left   = (VW - maxW) / 2 + 'px';
+    lbImg.style.top    = (VH - maxH) / 2 + 'px';
+
+    overlay.classList.add('on');
+    lbImg.classList.add('on');
+    closeBtn.classList.add('on');
+    open = true;
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLb() {
+    overlay.classList.remove('on');
+    lbImg.classList.remove('on');
+    closeBtn.classList.remove('on');
+    open = false;
+    document.body.style.overflow = '';
+  }
+
+  /* attach click to each ps-photo */
+  function attachClicks() {
+    document.querySelectorAll('.ps-photo').forEach(p => {
+      p.style.cursor = 'pointer';
+      p.addEventListener('click', (e) => {
+        /* only open if no significant drag happened */
+        if (p._dragged) { p._dragged = false; return; }
+        openLb(p);
+      });
+      p.addEventListener('pointerdown', () => { p._dragged = false; });
+      p.addEventListener('pointermove', () => { p._dragged = true; });
+    });
+  }
+
+  overlay.addEventListener('click', closeLb);
+  closeBtn.addEventListener('click', closeLb);
+  lbImg.addEventListener('click', closeLb);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && open) closeLb(); });
+
+  /* wait for DOM ready */
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', attachClicks);
+  } else {
+    attachClicks();
+  }
+})();
+</script>
+</body>
+</html>
